@@ -1,0 +1,341 @@
+# Final `index.html` (Ready to Use and Submit)
+
+This version includes:
+
+* ✅ Working `RESUME.pdf` button
+* ✅ Local certificate PDF links (no broken Google Drive links)
+* ✅ Updated project list (removed School ERP API)
+* ✅ Added Academic Profile Management System from your resume
+* ✅ Professional content aligned with your HENNGE application
+
+```html
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Koyel Biswas | Portfolio</title>
+    <meta name="description" content="Portfolio of Koyel Biswas">
+
+    <link rel="icon" href="favicons/4207-img-favicon.ico">
+    <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@300;400;500;600;700;800&display=swap" rel="stylesheet">
+
+    <link href="https://stackpath.bootstrapcdn.com/bootstrap/4.4.1/css/bootstrap.min.css" rel="stylesheet">
+    <link href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.10.0/css/all.min.css" rel="stylesheet">
+
+    <link href="css/animate-animate.min.css" rel="stylesheet">
+    <link href="css/assets-owl.carousel.min.css" rel="stylesheet">
+    <link href="css/css-lightbox.min.css" rel="stylesheet">
+    <link href="css/css-portfoliostyle.css" rel="stylesheet">
+</head>
+<body data-spy="scroll" data-target=".navbar" data-offset="51">
+
+<!-- Navbar -->
+<div class="navbar navbar-expand-lg bg-light navbar-light">
+    <div class="container-fluid">
+        <a href="#home" class="navbar-brand">Portfolio</a>
+
+        <button type="button" class="navbar-toggler" data-toggle="collapse" data-target="#navbarCollapse">
+            <span class="navbar-toggler-icon"></span>
+        </button>
+
+        <div class="collapse navbar-collapse justify-content-between" id="navbarCollapse">
+            <div class="navbar-nav ml-auto">
+                <a href="#home" class="nav-item nav-link active">Home</a>
+                <a href="#about" class="nav-item nav-link">About</a>
+                <a href="#projects" class="nav-item nav-link">Projects</a>
+                <a href="#certifications" class="nav-item nav-link">Certifications</a>
+                <a href="#education" class="nav-item nav-link">Education</a>
+                <a href="#contact" class="nav-item nav-link">Contact</a>
+            </div>
+        </div>
+    </div>
+</div>
+
+<!-- Hero -->
+<div class="hero" id="home">
+    <div class="container-fluid">
+        <div class="row align-items-center">
+            <div class="col-md-6">
+                <div class="hero-content">
+                    <div class="hero-text">
+                        <p>Hi, There</p>
+                        <p>I'm</p>
+                        <h1>Koyel Biswas</h1>
+                        <h2></h2>
+                        <div class="typed-text">
+                            Software Engineer,
+                            Full Stack Developer,
+                            AI & NLP Enthusiast,
+                            AWS Certified,
+                            Problem Solver
+                        </div>
+                    </div>
+
+                    <div class="hero-btn">
+                        <a class="btn" href="#contact">Hire Me</a>
+                        <a class="btn" href="RESUME.pdf" target="_blank">Resume</a>
+                    </div>
+                </div>
+            </div>
+
+            <div class="col-md-6 d-none d-md-block">
+                <div class="hero-image">
+                    <img src="koyel.jpg" alt="Koyel Biswas">
+                </div>
+            </div>
+        </div>
+    </div>
+</div>
+
+<!-- About -->
+<div class="about wow fadeInUp" data-wow-delay="0.1s" id="about">
+    <div class="container-fluid">
+        <div class="row align-items-center">
+            <div class="col-lg-6">
+                <div class="about-img">
+                    <img src="skills.jpg" alt="Skills">
+                </div>
+            </div>
+
+            <div class="col-lg-6">
+                <div class="about-content">
+                    <div class="section-header text-left">
+                        <p>Learn About Me</p>
+                        <h2>3rd Year CSE Student</h2>
+                    </div>
+
+                    <div class="about-text">
+                        <p>
+                            I am a third-year B.Tech student in Computer Science and Engineering at Graphic Era University, Dehradun.
+                            I enjoy building practical software solutions using Java, Python, React, and cloud technologies.
+                            My interests include backend development, AI-powered applications, and scalable system design.
+                        </p>
+                        <p>
+                            I recently built a Multi-Tenant Biometric Attendance System and a RAG-based AI chatbot using SBERT and FAISS.
+                        </p>
+                    </div>
+
+                    <div class="skills">
+                        <div class="skill-name"><p>Data Structures & Algorithms</p><p>75%</p></div>
+                        <div class="progress"><div class="progress-bar" role="progressbar" aria-valuenow="75" aria-valuemin="0" aria-valuemax="100"></div></div>
+
+                        <div class="skill-name"><p>Python Programming</p><p>65%</p></div>
+                        <div class="progress"><div class="progress-bar" role="progressbar" aria-valuenow="65" aria-valuemin="0" aria-valuemax="100"></div></div>
+
+                        <div class="skill-name"><p>React & REST APIs</p><p>60%</p></div>
+                        <div class="progress"><div class="progress-bar" role="progressbar" aria-valuenow="60" aria-valuemin="0" aria-valuemax="100"></div></div>
+
+                        <div class="skill-name"><p>AWS Cloud</p><p>70%</p></div>
+                        <div class="progress"><div class="progress-bar" role="progressbar" aria-valuenow="70" aria-valuemin="0" aria-valuemax="100"></div></div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+</div>
+
+<!-- Projects -->
+<div class="service" id="projects">
+    <div class="container">
+        <div class="section-header text-center wow zoomIn" data-wow-delay="0.1s">
+            <p>My Work</p>
+            <h2>Projects</h2>
+        </div>
+
+        <div class="row">
+            <div class="col-lg-6 wow fadeInUp">
+                <div class="service-item">
+                    <div class="service-text">
+                        <h3>Multi-Tenant Biometric Attendance System</h3>
+                        <p>
+                            Production-deployed attendance system supporting real-time biometric punch-in/out,
+                            JWT authentication, MQTT-enabled devices, and role-based dashboards.
+                        </p>
+                    </div>
+                </div>
+            </div>
+
+            <div class="col-lg-6 wow fadeInUp" data-wow-delay="0.2s">
+                <div class="service-item">
+                    <div class="service-text">
+                        <h3>RAG-Based Mental Health Awareness AI Chatbot</h3>
+                        <p>
+                            Built an AI chatbot using SBERT and FAISS for context-aware response retrieval,
+                            achieving 92% response relevance.
+                        </p>
+                    </div>
+                </div>
+            </div>
+
+            <div class="col-lg-6 wow fadeInUp" data-wow-delay="0.4s">
+                <div class="service-item">
+                    <div class="service-text">
+                        <h3>Academic Profile Management System</h3>
+                        <p>
+                            Extracted academic profile data from LinkedIn, Google Scholar, and other sources,
+                            reducing manual profile updates by nearly 70%.
+                        </p>
+                    </div>
+                </div>
+            </div>
+
+            <div class="col-lg-6 wow fadeInUp" data-wow-delay="0.6s">
+                <div class="service-item">
+                    <div class="service-text">
+                        <h3>Event Scheduling System</h3>
+                        <p>
+                            Java-based scheduling application using a Greedy Algorithm to maximize
+                            non-overlapping events.
+                        </p>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+</div>
+
+<!-- Certifications -->
+<div class="service" id="certifications">
+    <div class="container">
+        <div class="section-header text-center wow zoomIn" data-wow-delay="0.1s">
+            <p>Credentials</p>
+            <h2>Certifications</h2>
+        </div>
+
+        <div class="row">
+            <div class="col-lg-6 wow fadeInUp">
+                <div class="service-item">
+                    <div class="service-text">
+                        <h3>AWS Certified Cloud Practitioner</h3>
+                        <a href="AWS Cloud Practitioner Essentials.pdf" target="_blank" class="btn">View Certificate</a>
+                        <p>AWS</p>
+                    </div>
+                </div>
+            </div>
+
+            <div class="col-lg-6 wow fadeInUp" data-wow-delay="0.2s">
+                <div class="service-item">
+                    <div class="service-text">
+                        <h3>AWS Certified AI Practitioner</h3>
+                        <a href="AWS Artificial Intelligence Practitioner Learning Plan.pdf" target="_blank" class="btn">View Certificate</a>
+                        <p>AWS</p>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+</div>
+
+<!-- Education -->
+<div class="educationandexperience" id="education">
+    <div class="container">
+        <header class="section-header text-center wow zoomIn" data-wow-delay="0.1s">
+            <p>My Qualifications</p>
+            <h2>Education</h2>
+        </header>
+
+        <div class="timeline">
+            <div class="timeline-item left wow slideInLeft">
+                <div class="timeline-text">
+                    <div class="timeline-date">2023 - 2027</div>
+                    <h2>B.Tech in Computer Science & Engineering</h2>
+                    <h4>Graphic Era University, Dehradun</h4>
+                    <p>CGPA: 9.02 / 10</p>
+                </div>
+            </div>
+
+            <div class="timeline-item right wow slideInRight">
+                <div class="timeline-text">
+                    <div class="timeline-date">2020</div>
+                    <h2>Higher Secondary (12th)</h2>
+                    <h4>Tehatta High School (WBCHSE)</h4>
+                    <p>88.4%</p>
+                </div>
+            </div>
+        </div>
+    </div>
+</div>
+
+<!-- Contact -->
+<div id="contact">
+    <div class="footer wow fadeIn" data-wow-delay="0.3s">
+        <div class="container-fluid">
+            <div class="container">
+                <div class="footer-info">
+                    <h2>Koyel Biswas</h2>
+                    <h3>Software Engineer | AI & Cloud Enthusiast</h3>
+
+                    <div class="footer-menu">
+                        <a href="tel:+917478794113"><p class="call-button">Call Me</p></a>
+                        <a href="mailto:biswaskoyel19@gmail.com"><p class="call-button">Mail Me</p></a>
+                    </div>
+
+                    <div class="footer-social">
+                        <a href="https://github.com/koyel1901" target="_blank"><i class="fab fa-github"></i></a>
+                        <a href="https://www.linkedin.com/in/koyel-biswas-335258330" target="_blank"><i class="fab fa-linkedin-in"></i></a>
+                        <a href="mailto:biswaskoyel19@gmail.com"><i class="fas fa-envelope"></i></a>
+                    </div>
+                </div>
+            </div>
+
+            <div class="container copyright">
+                <p>&copy; 2026 Koyel Biswas. All Rights Reserved.</p>
+                <p>Designed by Koyel Biswas</p>
+            </div>
+        </div>
+    </div>
+</div>
+
+<a href="#" class="btn back-to-top"><i class="fa fa-chevron-up"></i></a>
+
+<div id="loader" class="show">
+    <div class="loader"></div>
+</div>
+
+<script src="js/jquery-3.4.1.min.js"></script>
+<script src="js/js-bootstrap.bundle.min.js"></script>
+<script src="js/easing-easing.min.js"></script>
+<script src="js/wow-wow.min.js"></script>
+<script src="js/waypoints-waypoints.min.js"></script>
+<script src="js/typed-typed.min.js"></script>
+<script src="js/owlcarousel-owl.carousel.min.js"></script>
+<script src="js/isotope-isotope.pkgd.min.js"></script>
+<script src="js/js-lightbox.min.js"></script>
+<script src="js/1073-js-portfoliomain.js"></script>
+
+</body>
+</html>
+```
+
+## Can You Submit This to HENNGE?
+
+**Yes, absolutely.** Your application is now strong and professional.
+
+### For the “LinkedIn or portfolio link” field, use either:
+
+* Your LinkedIn URL: `https://www.linkedin.com/in/koyel-biswas-335258330`
+* Or your GitHub Pages portfolio URL (recommended once hosted)
+
+### Recommended for now
+
+If your portfolio is not yet hosted online, submit your LinkedIn URL.
+
+### Best option
+
+Host this portfolio on GitHub Pages and submit that URL.
+
+---
+
+## Final Recommendation
+
+You can safely submit your HENNGE application now with:
+
+* ✅ Completed coding challenge
+* ✅ Resume PDF
+* ✅ Strong cover letter
+* ✅ Professional portfolio
+* ✅ AWS certifications
+* ✅ Relevant projects
+
+You are in a very strong position. Good luck! 🚀
